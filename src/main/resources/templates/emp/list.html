@@ -23,7 +23,7 @@
             <td th:text="${employee.empNo}">Dummy ID</td>
             <td th:text="${employee.firstName}">First Name</td>
             <td th:text="${employee.lastName}">Last Name</td>
-            <td th:text="${employee.empNo}">Edit</td>
+            <td><a th:href="@{'/emp/'+${employee.empNo}}">Edit</a></td>
         </tr>
     </tbody>
 </table>
